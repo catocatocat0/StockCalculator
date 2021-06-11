@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="StockCalculator:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/StockCalculator_jar</output-path>
+    <root id="archive" name="StockCalculator.jar">
+      <element id="module-output" name="StockCalculator" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/objecthunter/exp4j/0.4.8/exp4j-0.4.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jfree/jfreechart/1.5.1/jfreechart-1.5.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
