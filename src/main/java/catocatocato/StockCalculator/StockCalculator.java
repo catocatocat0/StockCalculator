@@ -56,17 +56,19 @@ public class StockCalculator {
         while(keepAlive){
 
             //gives the user control options
-            System.out.println("\n----Type (X) to exit the program. Type (B) to return back. Type (M) to return to the menu----\n");
+            System.out.println("\n----Type (/X) to exit the program. Type (/M) to return to the menu----\n");
 
             System.out.println("Type the following commands to start its corresponding program:");
+            System.out.println("---------------------------------------------------------------");
 
             //displays all the programs
             System.out.println(MENU.menuOptions());
 
             //display the menu for the user
+            System.out.print("INPUT: ");
             selection = CONSOLE.nextLine();
 
-            if(selection.equalsIgnoreCase("x")){
+            if(selection.equalsIgnoreCase("/x")){
                 keepAlive = false;
             }else{
 
@@ -82,7 +84,9 @@ public class StockCalculator {
 
 
     //executes on shut down
-    public void onShutdown(){
+    public static void onShutdown(){
+
+        System.out.println("Shutting down program....");
 
         System.exit(1);
     }

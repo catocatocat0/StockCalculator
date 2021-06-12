@@ -14,6 +14,7 @@ public class Menu {
 
         //adds programs with their identifier
         PROGRAMS.put("TEST", new Test(CONSOLE));
+        PROGRAMS.put("PL", new ProfitLoss(CONSOLE));
     }
 
     /*
@@ -28,7 +29,10 @@ public class Menu {
         ArrayList<String> programNames = new ArrayList<>(PROGRAMS.keySet());
 
         for(String programName : programNames){
-            menuOutput.append(programName + ": " + PROGRAMS.get(programName).getDesc() + "\n");
+            menuOutput.append(programName)
+                    .append(": ")
+                    .append(PROGRAMS.get(programName).getDesc())
+                    .append("\n");
         }
 
         return menuOutput.toString();
